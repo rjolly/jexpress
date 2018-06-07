@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+    <info module="jexpress" organisation="com.github.rjolly" revision="1.0">
+        <description homepage="http://www.ii.uib.no/~bjarted/jexpress/"/>
+    </info>
+    <configurations>
+        <conf name="default" extends="runtime,master"/>
+        <conf name="master"/>
+        <conf name="compile"/>
+        <conf name="runtime"/>
+        <conf name="compile-test"/>
+        <conf name="runtime-test"/>
+    </configurations>
+    <dependencies>
+        <dependency org="com.github.rjolly" name="acme" rev="1.0" conf="compile->master;runtime->default"/>
+        <dependency org="com.github.rjolly" name="view3d" rev="1.0" conf="compile->master;runtime->default"/>
+        <dependency org="gov.nist.math" name="jama" rev="1.0.3" conf="compile->master;runtime->default"/>
+        <dependency org="net.sf.jsci" name="jsci" rev="1.2" conf="compile->master;runtime->default"/>
+    </dependencies>
+</ivy-module>
