@@ -1,4 +1,4 @@
-import JSci.maths.DoubleMatrix;
+import JSci.maths.matrices.DoubleMatrix;
 import JSci.maths.KarhunenLoeve;
 import JSci.maths.MaximumIterationsExceededException;
 import java.io.PrintStream;
@@ -62,7 +62,7 @@ public class LowPointDataset {
 
 	public DoubleMatrix getmatrix(double ad[][]) {
 		DoubleMatrix doublematrix = new DoubleMatrix(ad);
-		DoubleMatrix doublematrix1 = doublematrix.multiply(eigenvl);
+		DoubleMatrix doublematrix1 = (DoubleMatrix) doublematrix.multiply(eigenvl);
 		return doublematrix1;
 	}
 
