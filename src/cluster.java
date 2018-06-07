@@ -118,7 +118,7 @@ public class cluster extends Frame
 		rightfinalend = 400;
 		fh = new filehandler();
 		greens = false;
-		ah = new actionhandler(this, 1);
+		ah = new actionhandler(this, 0);
 		end = false;
 		painted = false;
 		gfxready = false;

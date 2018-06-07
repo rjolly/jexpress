@@ -10,13 +10,11 @@ public class actionhandler
 	int exitjava;
 
 	public actionhandler(Frame frame) {
-		exitjava = 0;
-		tobeclosed = frame;
+		this(frame, 0);
 	}
 
 	public actionhandler(Frame frame, int i) {
-		exitjava = 0;
-		exitjava = 1;
+		exitjava = i;
 		tobeclosed = frame;
 	}
 
