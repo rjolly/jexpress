@@ -60,7 +60,7 @@ public class graph extends Frame
 		cl = cluster;
 		clusterdata = true;
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		setIconImage(toolkit.getImage("im/curv.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("curv.gif")));
 		names = as;
 		addWindowListener(ah);
 		fh = filehandler1;
@@ -106,7 +106,7 @@ public class graph extends Frame
 		fh = new filehandler();
 		frameheight = 130;
 		framewidth = 160;
-		setIconImage(toolkit.getImage("im/curv.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("curv.gif")));
 		addWindowListener(ah);
 		fh = fh;
 		setTitle("Base");

@@ -92,7 +92,7 @@ public class graph3d extends Frame
 		framewidth = 160;
 		clusterdata = true;
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		setIconImage(toolkit.getImage("im/curv.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("curv.gif")));
 		names = as;
 		addWindowListener(ah);
 		fh = filehandler1;
@@ -146,7 +146,7 @@ public class graph3d extends Frame
 		fh = new filehandler();
 		frameheight = 320;
 		framewidth = 250;
-		setIconImage(toolkit.getImage("im/curv.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("curv.gif")));
 		addWindowListener(ah);
 		fh = fh;
 		setTitle(s);

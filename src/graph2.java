@@ -95,7 +95,7 @@ public class graph2 extends Frame
 		li.addItemListener(this);
 		clusterdata = true;
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		setIconImage(toolkit.getImage("im/curv.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("curv.gif")));
 		a = analyse1;
 		setTitle("Gene graph");
 		trunk = gen1;
@@ -346,7 +346,7 @@ public class graph2 extends Frame
 		frameheight = 220;
 		framewidth = 250;
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		setIconImage(toolkit.getImage("im/curv.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("curv.gif")));
 		addWindowListener(ah);
 		fh = cl.fh;
 		setBackground(Color.white);
@@ -393,7 +393,7 @@ public class graph2 extends Frame
 		frameheight = 220;
 		framewidth = 250;
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		setIconImage(toolkit.getImage("im/curv.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("curv.gif")));
 		addWindowListener(ah);
 		fh = cl.fh;
 		setBackground(Color.white);

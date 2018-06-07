@@ -28,8 +28,8 @@ public class genefinder extends Frame {
 		setTitle("Gene finder");
 		setBackground(Color.lightGray);
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		magn = toolkit.getImage("im/find.gif");
-		setIconImage(toolkit.getImage("im/magn.gif"));
+		magn = toolkit.getImage(getClass().getResource("find.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("magn.gif")));
 		setLocation(cluster.getLocation().x + 100, cluster.getLocation().y + 450);
 		addWindowListener(ah);
 		setLayout(new FlowLayout());

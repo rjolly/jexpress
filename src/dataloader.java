@@ -119,8 +119,8 @@ public class dataloader extends Frame
 		error = 0;
 		ah = new actionhandler(this);
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		setIconImage(toolkit.getImage("im/loads.gif"));
-		startimage = toolkit.getImage("im/file.jpg");
+		setIconImage(toolkit.getImage(getClass().getResource("loads.gif")));
+		startimage = toolkit.getImage(getClass().getResource("file.jpg"));
 		setTitle("Gene data loader");
 		addWindowListener(ah);
 		status2 = label;

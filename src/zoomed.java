@@ -88,7 +88,7 @@ public class zoomed extends Frame
 		rangerhor2.setBackground(Color.lightGray);
 		rangerhor2.addAdjustmentListener(this);
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		setIconImage(toolkit.getImage("im/magn.gif"));
+		setIconImage(toolkit.getImage(getClass().getResource("magn.gif")));
 		addComponentListener(this);
 		addWindowListener(ah);
 		setBackground(Color.white);

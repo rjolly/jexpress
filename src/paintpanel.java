@@ -28,7 +28,7 @@ public class paintpanel extends Panel
 		toolkit = Toolkit.getDefaultToolkit();
 		clearpanel = true;
 		noim = true;
-		image = toolkit.getImage("im/front.jpg");
+		image = toolkit.getImage(getClass().getResource("front.jpg"));
 		setBackground(Color.white);
 		setLayout(new BorderLayout());
 		rangerup = new Scrollbar(1, 0, 50, 0, 50);
