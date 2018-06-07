@@ -13,6 +13,7 @@ import java.awt.image.ColorModel;
 import java.awt.image.ImageObserver;
 import java.awt.image.MemoryImageSource;
 import java.io.PrintStream;
+import java.text.AttributedCharacterIterator;
 import java.util.Hashtable;
 
 // Referenced classes of package tom.graphic.ThreeD:
@@ -281,6 +282,9 @@ public class Graphics3D extends Graphics {
 	}
 
 	public void drawRoundRect(int i, int j, int k, int l, int i1, int j1) {
+	}
+
+	public void drawString(AttributedCharacterIterator iterator, int x, int y) {
 	}
 
 	public void drawString(String s, int i, int j) {

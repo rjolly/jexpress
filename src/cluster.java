@@ -274,7 +274,7 @@ public class cluster extends Frame
 			if (clickedgen == null)
 				status.setText("Select a cluster first");
 			else
-				i = new vrmlmodul(clickedgen, a.data, a.names, this);
+				new vrmlmodul(clickedgen, a.data, a.names, this);
 		if (actionevent.getActionCommand() == "cluster") {
 			if (a.data != null) {
 				a.calcdist(status);
@@ -311,7 +311,7 @@ public class cluster extends Frame
 			gf.setVisible(true);
 		}
 		if (actionevent.getActionCommand() == "K-Means" && a.data != null)
-			i = new kmeans(a.data, this, a.names);
+			new kmeans(a.data, this, a.names);
 		if (actionevent.getActionCommand() == "Find")
 			if (trunk != null) {
 				vertlocation = 0;
@@ -323,7 +323,7 @@ public class cluster extends Frame
 				status.setText("There are no genes in the dataset, load and cluster data first");
 			}
 		if (actionevent.getActionCommand() == "Save textrepresentation")
-			i = new textwriter(clickedgen, trunk, status, a.names);
+			new textwriter(clickedgen, trunk, status, a.names);
 	}
 
 	public void adjustmentValueChanged(AdjustmentEvent adjustmentevent) {
